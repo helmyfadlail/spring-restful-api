@@ -9,9 +9,15 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-public class UserResponse {
+public class ContactResponse {
 
-    private String username;
+    private String id;
 
-    private String name;
+    private String firstName;
+
+    private String lastName;
+
+    private String email;
+
+    private String phone;
 }
