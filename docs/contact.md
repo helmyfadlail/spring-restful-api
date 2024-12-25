@@ -6,16 +6,16 @@ Endpoint : POST /api/contacts
 
 Request Header :
 
-- X-API-TOKEN : Token (Mandatory)
+-   X-API-TOKEN : Token (Mandatory)
 
 Request Body :
 
 ```json
 {
-  "firstName": "Helmy Fadlail",
-  "lastName": "Albab",
-  "email": "helmyfadlail.5@gmail.com",
-  "phone": "081334105663"
+    "firstName": "Helmy Fadlail",
+    "lastName": "Albab",
+    "email": "helmyfadlail.5@gmail.com",
+    "phone": "081334105663"
 }
 ```
 
@@ -23,13 +23,13 @@ Response Body (Success) :
 
 ```json
 {
-  "data": {
-    "id": "random-string",
-    "firstName": "Helmy Fadlail",
-    "lastName": "Albab",
-    "email": "helmyfadlail.5@gmail.com",
-    "phone": "081334105663"
-  }
+    "data": {
+        "id": "random-string",
+        "firstName": "Helmy Fadlail",
+        "lastName": "Albab",
+        "email": "helmyfadlail.5@gmail.com",
+        "phone": "081334105663"
+    }
 }
 ```
 
@@ -37,7 +37,7 @@ Response Body (Failed) :
 
 ```json
 {
-  "errors": "Email format invalid, phone formar invalid, ..."
+    "errors": "Email format invalid, phone formar invalid, ..."
 }
 ```
 
@@ -47,16 +47,16 @@ Endpoint : PUT /api/contacts/{idContact}
 
 Request Header :
 
-- X-API-TOKEN : Token (Mandatory)
+-   X-API-TOKEN : Token (Mandatory)
 
 Request Body :
 
 ```json
 {
-  "firstName": "Helmy Fadlail",
-  "lastName": "Albab",
-  "email": "helmyfadlail.5@gmail.com",
-  "phone": "081334105663"
+    "firstName": "Helmy Fadlail",
+    "lastName": "Albab",
+    "email": "helmyfadlail.5@gmail.com",
+    "phone": "081334105663"
 }
 ```
 
@@ -64,13 +64,13 @@ Response Body (Success) :
 
 ```json
 {
-  "data": {
-    "id": "random-string",
-    "firstName": "Helmy Fadlail",
-    "lastName": "Albab",
-    "email": "helmyfadlail.5@gmail.com",
-    "phone": "081334105663"
-  }
+    "data": {
+        "id": "random-string",
+        "firstName": "Helmy Fadlail",
+        "lastName": "Albab",
+        "email": "helmyfadlail.5@gmail.com",
+        "phone": "081334105663"
+    }
 }
 ```
 
@@ -78,7 +78,7 @@ Response Body (Failed) :
 
 ```json
 {
-  "errors": "Email format invalid, phone formar invalid, ..."
+    "errors": "Email format invalid, phone formar invalid, ..."
 }
 ```
 
@@ -88,19 +88,19 @@ Endpoint : GET /api/contacts/{idContact}
 
 Request Header :
 
-- X-API-TOKEN : Token (Mandatory)
+-   X-API-TOKEN : Token (Mandatory)
 
 Response Body (Success) :
 
 ```json
 {
-  "data": {
-    "id": "random-string",
-    "firstName": "Helmy Fadlail",
-    "lastName": "Albab",
-    "email": "helmyfadlail.5@gmail.com",
-    "phone": "081334105663"
-  }
+    "data": {
+        "id": "random-string",
+        "firstName": "Helmy Fadlail",
+        "lastName": "Albab",
+        "email": "helmyfadlail.5@gmail.com",
+        "phone": "081334105663"
+    }
 }
 ```
 
@@ -108,7 +108,7 @@ Response Body (Failed, 404) :
 
 ```json
 {
-  "errors": "Contact is not found"
+    "errors": "Contact is not found"
 }
 ```
 
@@ -118,34 +118,34 @@ Endpoint : GET /api/contacts
 
 Query Param :
 
-- name : String, contact first name or last name, using like query, optional
-- phone : String, contact phone, using like query, optional
-- email : String, contact email, using like query, optional
-- page : Integer, start from 0, default 0
-- size : Integer, default 10
+-   name : String, contact first name or last name, using like query, optional
+-   phone : String, contact phone, using like query, optional
+-   email : String, contact email, using like query, optional
+-   page : Integer, start from 0, default 0
+-   size : Integer, default 10
 
 Request Header :
 
-- X-API-TOKEN : Token (Mandatory)
+-   X-API-TOKEN : Token (Mandatory)
 
 Response Body (Success) :
 
 ```json
 {
-  "data": [
-    {
-      "id": "random-string",
-      "firstName": "Helmy Fadlail",
-      "lastName": "Albab",
-      "email": "helmyfadlail.5@gmail.com",
-      "phone": "081334105663"
+    "data": [
+        {
+            "id": "random-string",
+            "firstName": "Helmy Fadlail",
+            "lastName": "Albab",
+            "email": "helmyfadlail.5@gmail.com",
+            "phone": "081334105663"
+        }
+    ],
+    "paging": {
+        "currentPage": 0,
+        "totalPage": 10,
+        "size": 10
     }
-  ],
-  "paging": {
-    "currentPage": 0,
-    "totalPage": 10,
-    "size": 10
-  }
 }
 ```
 
@@ -153,7 +153,7 @@ Response Body (Failed) :
 
 ```json
 {
-  "errors": "Unauthorized"
+    "errors": "Unauthorized"
 }
 ```
 
@@ -163,13 +163,13 @@ Endpoint : DELETE /api/contacts/{idContact}
 
 Request Header :
 
-- X-API-TOKEN : Token (Mandatory)
+-   X-API-TOKEN : Token (Mandatory)
 
 Response Body (Success) :
 
 ```json
 {
-  "data": "OK"
+    "data": "OK"
 }
 ```
 
@@ -177,6 +177,6 @@ Response Body (Failed) :
 
 ```json
 {
-  "errors": "Contact is not found"
+    "errors": "Contact is not found"
 }
 ```

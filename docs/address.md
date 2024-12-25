@@ -6,17 +6,17 @@ Endpoint : POST /api/contacts/{idContact}/addresses
 
 Request Header :
 
-- X-API-TOKEN : Token (Mandatory)
+-   X-API-TOKEN : Token (Mandatory)
 
 Request Body :
 
 ```json
 {
-  "street": "Jl. Raya Sawahan",
-  "city": "Nganjuk",
-  "province": "Jawa Timur",
-  "country": "Indonesia",
-  "postalCode": "64473"
+    "street": "Jl. Raya Sawahan",
+    "city": "Nganjuk",
+    "province": "Jawa Timur",
+    "country": "Indonesia",
+    "postalCode": "64473"
 }
 ```
 
@@ -24,14 +24,14 @@ Response Body (Success) :
 
 ```json
 {
-  "data": {
-    "id": "randomstring",
-    "street": "Jl. Raya Sawahan",
-    "city": "Nganjuk",
-    "province": "Jawa Timur",
-    "country": "Indonesia",
-    "postalCode": "64473"
-  }
+    "data": {
+        "id": "randomstring",
+        "street": "Jl. Raya Sawahan",
+        "city": "Nganjuk",
+        "province": "Jawa Timur",
+        "country": "Indonesia",
+        "postalCode": "64473"
+    }
 }
 ```
 
@@ -39,7 +39,7 @@ Response Body (Failed) :
 
 ```json
 {
-  "errors": "Contact is not found"
+    "errors": "Contact is not found"
 }
 ```
 
@@ -49,17 +49,17 @@ Endpoint : PUT /api/contacts/{idContact}/addresses/{idAddress}
 
 Request Header :
 
-- X-API-TOKEN : Token (Mandatory)
+-   X-API-TOKEN : Token (Mandatory)
 
 Request Body :
 
 ```json
 {
-  "street": "Jl. Raya Sawahan",
-  "city": "Nganjuk",
-  "province": "Jawa Timur",
-  "country": "Indonesia",
-  "postalCode": "64473"
+    "street": "Jl. Raya Sawahan",
+    "city": "Nganjuk",
+    "province": "Jawa Timur",
+    "country": "Indonesia",
+    "postalCode": "64473"
 }
 ```
 
@@ -67,14 +67,14 @@ Response Body (Success) :
 
 ```json
 {
-  "data": {
-    "id": "randomstring",
-    "street": "Jl. Raya Sawahan",
-    "city": "Nganjuk",
-    "province": "Jawa Timur",
-    "country": "Indonesia",
-    "postalCode": "64473"
-  }
+    "data": {
+        "id": "randomstring",
+        "street": "Jl. Raya Sawahan",
+        "city": "Nganjuk",
+        "province": "Jawa Timur",
+        "country": "Indonesia",
+        "postalCode": "64473"
+    }
 }
 ```
 
@@ -82,7 +82,7 @@ Response Body (Failed) :
 
 ```json
 {
-  "errors": "Address is not found"
+    "errors": "Address is not found"
 }
 ```
 
@@ -92,20 +92,20 @@ Endpoint : GET /api/contacts/{idContact}/addresses/{idAddress}
 
 Request Header :
 
-- X-API-TOKEN : Token (Mandatory)
+-   X-API-TOKEN : Token (Mandatory)
 
 Response Body (Success) :
 
 ```json
 {
-  "data": {
-    "id": "randomstring",
-    "street": "Jl. Raya Sawahan",
-    "city": "Nganjuk",
-    "province": "Jawa Timur",
-    "country": "Indonesia",
-    "postalCode": "64473"
-  }
+    "data": {
+        "id": "randomstring",
+        "street": "Jl. Raya Sawahan",
+        "city": "Nganjuk",
+        "province": "Jawa Timur",
+        "country": "Indonesia",
+        "postalCode": "64473"
+    }
 }
 ```
 
@@ -113,7 +113,7 @@ Response Body (Failed) :
 
 ```json
 {
-  "errors": "Address is not found"
+    "errors": "Address is not found"
 }
 ```
 
@@ -123,13 +123,13 @@ Endpoint : DELETE /api/contacts/{idContact}/addresses/{idAddress}
 
 Request Header :
 
-- X-API-TOKEN : Token (Mandatory)
+-   X-API-TOKEN : Token (Mandatory)
 
 Response Body (Success) :
 
 ```json
 {
-  "data": "OK"
+    "data": "OK"
 }
 ```
 
@@ -137,7 +137,7 @@ Response Body (Failed) :
 
 ```json
 {
-  "errors": "Address is not found"
+    "errors": "Address is not found"
 }
 ```
 
@@ -147,22 +147,22 @@ Endpoint : GET /api/contacts/{idContact}/addresses
 
 Request Header :
 
-- X-API-TOKEN : Token (Mandatory)
+-   X-API-TOKEN : Token (Mandatory)
 
 Response Body (Success) :
 
 ```json
 {
-  "data": [
-    {
-      "id": "randomstring",
-      "street": "Jl. Raya Sawahan",
-      "city": "Nganjuk",
-      "province": "Jawa Timur",
-      "country": "Indonesia",
-      "postalCode": "64473"
-    }
-  ]
+    "data": [
+        {
+            "id": "randomstring",
+            "street": "Jl. Raya Sawahan",
+            "city": "Nganjuk",
+            "province": "Jawa Timur",
+            "country": "Indonesia",
+            "postalCode": "64473"
+        }
+    ]
 }
 ```
 
@@ -170,6 +170,6 @@ Response Body (Failed) :
 
 ```json
 {
-  "errors": "Contact is not found"
+    "errors": "Contact is not found"
 }
 ```

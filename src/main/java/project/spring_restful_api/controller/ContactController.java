@@ -42,7 +42,8 @@ public class ContactController {
     }
 
     @PatchMapping(path = "/api/contacts/{contactId}", consumes = MediaType.APPLICATION_JSON_VALUE, produces = MediaType.APPLICATION_JSON_VALUE)
-    public WebResponse<ContactResponse> update(User user, @RequestBody UpdateContactRequest request,
+    public WebResponse<ContactResponse> update(User user,
+            @RequestBody UpdateContactRequest request,
             @PathVariable("contactId") String contactId) {
         request.setId(contactId);
         ContactResponse contactResponse = contactService.update(user, request);
@@ -51,7 +52,7 @@ public class ContactController {
 
     @DeleteMapping(path = "/api/contacts/{contactId}", produces = MediaType.APPLICATION_JSON_VALUE)
     public WebResponse<String> delete(User user, @PathVariable("contactId") String contactId) {
-        contactService.get(user, contactId);
+        contactService.delete(user, contactId);
         return WebResponse.<String>builder().data("OK").build();
     }
 

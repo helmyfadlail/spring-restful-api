@@ -12,6 +12,7 @@ import lombok.Setter;
 @NoArgsConstructor
 @Entity
 @Table(name = "addresses")
+
 public class Address {
 
     @Id

@@ -36,12 +36,12 @@ public class AuthService {
 
             return TokenResponse.builder().token(user.getToken()).expiredAt(user.getTokenExpiredAt()).build();
         } else {
-            throw new ResponseStatusException(HttpStatus.UNAUTHORIZED, "Username or password wrong");
+            throw new ResponseStatusException(HttpStatus.UNAUTHORIZED, "Unauthorized");
         }
     }
 
     private Long next30Days() {
-        return System.currentTimeMillis() + (1000 * 60 * 60 * 24 * 30);
+        return System.currentTimeMillis() + 30L * 24 * 60 * 60 * 1000;
     }
 
     @Transactional
