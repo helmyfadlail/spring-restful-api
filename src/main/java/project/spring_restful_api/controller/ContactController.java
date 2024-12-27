@@ -57,7 +57,6 @@ public class ContactController {
     }
 
     @GetMapping(path = "/api/contacts", produces = MediaType.APPLICATION_JSON_VALUE)
-
     public WebResponse<List<ContactResponse>> search(User user,
             @RequestParam(value = "name", required = false) String name,
             @RequestParam(value = "email", required = false) String email,
